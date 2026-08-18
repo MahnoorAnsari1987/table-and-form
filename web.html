@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise Bank</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #222;
+    }
+
+    /* Navbar */
+    nav {
+      background: #0b3d91;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h2 {
+      font-size: 24px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 70px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      background: white;
+    }
+
+    .hero-text {
+      max-width: 550px;
+    }
+
+    .hero-text h1 {
+      font-size: 45px;
+      color: #0b3d91;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #0b3d91;
+      color: white;
+      padding: 13px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .bank-card {
+      width: 350px;
+      height: 210px;
+      background: linear-gradient(135deg, #0b3d91, #1877d2);
+      border-radius: 18px;
+      padding: 25px;
+      color: white;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .bank-card h3 {
+      text-align: right;
+      margin-bottom: 45px;
+    }
+
+    .card-number {
+      font-size: 20px;
+      letter-spacing: 3px;
+      margin-bottom: 25px;
+    }
+
+    /* Services */
+    .services {
+      padding: 60px 8%;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 32px;
+      margin-bottom: 35px;
+      color: #0b3d91;
+    }
+
+    .service-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .service {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .service h3 {
+      margin-bottom: 12px;
+      color: #0b3d91;
+    }
+
+    .service p {
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* Balance */
+    .balance {
+      background: #0b3d91;
+      color: white;
+      padding: 50px 8%;
+      text-align: center;
+    }
+
+    .balance h2 {
+      margin-bottom: 15px;
+    }
+
+    .balance h1 {
+      font-size: 42px;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul {
+        gap: 15px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 35px;
+      }
+
+      .bank-card {
+        width: 100%;
+        max-width: 350px;
+      }
+
+      .service-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h2>Exercise Bank</h2>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#balance">Balance</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+
+    <div class="hero-text">
+      <h1>Simple & Secure Banking</h1>
+
+      <p>
+        Welcome to Exercise Bank. Manage your money,
+        check your balance and explore our banking services
+        from one simple website.
+      </p>
+
+      <a href="#services" class="btn">Explore Services</a>
+    </div>
+
+
+    <!-- Bank Card -->
+    <div class="bank-card">
+
+      <h3>EXERCISE BANK</h3>
+
+      <div class="card-number">
+        4532  ****  ****  7821
+      </div>
+
+      <p>John Doe</p>
+
+    </div>
+
+  </section>
+
+
+  <!-- Services -->
+  <section class="services" id="services">
+
+    <h2>Our Banking Services</h2>
+
+    <div class="service-container">
+
+      <div class="service">
+        <h3>💰 Savings Account</h3>
+        <p>
+          Save your money securely and manage your
+          savings easily.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>💳 Debit Card</h3>
+        <p>
+          Use your debit card for everyday purchases
+          and payments.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>📱 Online Banking</h3>
+        <p>
+          Access your account and manage your banking
+          activities online.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Balance -->
+  <section class="balance" id="balance">
+
+    <h2>Your Available Balance</h2>
+
+    <h1>$12,450.00</h1>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Exercise Bank. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>y
