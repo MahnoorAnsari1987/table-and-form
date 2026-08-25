@@ -1,182 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SecureBank - Home</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>My HTML Projects</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 0;
+  }
+  h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  .menu {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 400px;
+  }
+  .menu a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    background: #3b82f6;
+    padding: 12px 16px;
+    margin: 10px 0;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+  .menu a:hover {
+    background: #2563eb;
+  }
+</style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <div class="nav-left">
-                <span class="bank-icon">🏦</span>
-                <span class="bank-name">SecureBank</span>
-            </div>
-            <div class="nav-right">
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="loans.html">Loans</a></li>
-                    <li><a href="open-account.html">Open Account</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="auth-buttons">
-                    <a href="login.html" class="btn btn-secondary">Login</a>
-                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
-                </div>
-                <button class="mobile-menu-btn">☰</button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to SecureBank</h1>
-            <p>Your trusted partner for all banking needs. Secure, reliable, and always here for you.</p>
-            <div class="hero-buttons">
-                <a href="signup.html" class="btn btn-primary">Sign Up Now</a>
-                <a href="services.html" class="btn btn-secondary">Our Services</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <h2>Why Choose SecureBank?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Secure Banking</h3>
-                    <p>Advanced security measures to protect your money and personal information.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>24/7 Access</h3>
-                    <p>Access your account anytime, anywhere through our online and mobile banking.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💰</div>
-                    <h3>Competitive Rates</h3>
-                    <p>Enjoy competitive interest rates on savings and low rates on loans.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🤝</div>
-                    <h3>Excellent Service</h3>
-                    <p>Dedicated customer support team ready to assist you with any needs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Preview -->
-    <section class="services-preview">
-        <div class="container">
-            <h2>Our Popular Services</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <div class="service-icon">💳</div>
-                    <h3>Debit Cards</h3>
-                    <p>Get your debit card instantly and enjoy worldwide acceptance.</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon">🏠</div>
-                    <h3>Home Loans</h3>
-                    <p>Fulfill your dream of owning a home with our flexible loan options.</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon">🚗</div>
-                    <h3>Car Loans</h3>
-                    <p>Drive your dream car with our affordable car loan solutions.</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon">💼</div>
-                    <h3>Business Banking</h3>
-                    <p>Comprehensive banking solutions for your business growth.</p>
-                </div>
-            </div>
-            <div class="text-center">
-                <a href="services.html" class="btn btn-outline">View All Services</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h3>50K+</h3>
-                    <p>Happy Customers</p>
-                </div>
-                <div class="stat-item">
-                    <h3>100+</h3>
-                    <p>Branches</p>
-                </div>
-                <div class="stat-item">
-                    <h3>25+</h3>
-                    <p>Years Experience</p>
-                </div>
-                <div class="stat-item">
-                    <h3>$1B+</h3>
-                    <p>Assets Managed</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to Get Started?</h2>
-            <p>Join thousands of satisfied customers and experience banking the way it should be.</p>
-            <a href="signup.html" class="btn btn-primary">Sign Up Today</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>SecureBank</h3>
-                    <p>Your trusted banking partner since 1999.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="loans.html">Loans</a></li>
-                        <li><a href="signup.html">Sign Up</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help Center</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p>📍 123 Banking Street, City</p>
-                    <p>📞 +1 234 567 8900</p>
-                    <p>✉️ info@securebank.com</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 SecureBank. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <h1>📂 My HTML Projects</h1>
+  <div class="menu">
+    <a href="atm.html">ATM</a>
+    <a href="even,odd.html">Even / Odd</a>
+    <a href="form.html">Form</a>
+    <a href="hello.html">Hello</a>
+    <a href="large%20num.html">Large Number</a>
+    <a href="log.html">Login</a>
+    <a href="marks.html">Marks</a>
+    <a href="newodd.html">New Odd</a>
+    <a href="print%201to10.html">Print 1 to 10</a>
+    <a href="stu%20adm.html">Student Admission</a>
+  </div>
 </body>
 </html>
