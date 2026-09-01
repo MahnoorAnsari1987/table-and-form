@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn | Noor Heritage</title>
+  <meta name="description" content="Interactive Islamic learning: Five Pillars, Asma ul-Husna, tasbih counter, prayer times, and a heritage quiz.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pattern-bg" data-page="learn">
+  <header class="site-header">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="container">
+      <div class="topbar">
+        <span data-hijri-date>Loading Islamic date…</span>
+        <span>اقْرَأْ بِاسْمِ رَبِّكَ</span>
+      </div>
+      <nav class="navbar" aria-label="Main">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">ن</span>
+          <span class="logo-text">Noor Heritage<span>Islamic History &amp; Culture</span></span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="history.html" data-nav="history">History</a></li>
+          <li><a href="prophets.html" data-nav="prophets">Prophets</a></li>
+          <li><a href="sahaba.html" data-nav="sahaba">Sahaba</a></li>
+          <li><a href="places.html" data-nav="places">Places</a></li>
+          <li><a href="architecture.html" data-nav="architecture">Architecture</a></li>
+          <li><a href="scholars.html" data-nav="scholars">Scholars</a></li>
+          <li><a href="learn.html" data-nav="learn">Learn</a></li>
+          <li><a href="gallery.html" data-nav="gallery">Gallery</a></li>
+        </ul>
+        <button class="icon-btn" type="button" data-open-search aria-label="Search the museum">⌕</button>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero page-hero">
+      <div class="hero-media"><img src="images/quran.jpg" alt="Open Qur’an for study"></div>
+      <div class="hero-inner container">
+        <p class="eyebrow">Interactive hall</p>
+        <h1>Learn</h1>
+        <p class="subtitle">Pillars, Names of Allah, tasbih, salah times, and a heritage quiz</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2">
+          <article class="ayah-box reveal">
+            <p class="eyebrow" style="color:#2d6a52">Ayah of the day</p>
+            <div data-ayah></div>
+          </article>
+          <article class="prayer-box reveal">
+            <label class="eyebrow" style="color:#2d6a52">Salah times</label>
+            <select class="filter-select" data-city>
+              <option>Makkah</option>
+              <option>Madinah</option>
+              <option>Istanbul</option>
+              <option>Cairo</option>
+              <option selected>Lahore</option>
+              <option>Fez</option>
+            </select>
+            <div data-prayer></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream">
+      <div class="container">
+        <div class="section-header center reveal">
+          <h2>The Five Pillars</h2>
+          <div class="gold-rule"></div>
+          <p class="lede">Click each arkān. These are acts of worship, not slogans.</p>
+        </div>
+        <div class="grid grid-5">
+          <article class="card pillar-card reveal" data-pillar="shahada"><div class="arabic-name">شهادة</div><h3>Shahadah</h3></article>
+          <article class="card pillar-card reveal" data-pillar="salah"><div class="arabic-name">صلاة</div><h3>Salah</h3></article>
+          <article class="card pillar-card reveal" data-pillar="zakat"><div class="arabic-name">زكاة</div><h3>Zakat</h3></article>
+          <article class="card pillar-card reveal" data-pillar="sawm"><div class="arabic-name">صوم</div><h3>Sawm</h3></article>
+          <article class="card pillar-card reveal" data-pillar="hajj"><div class="arabic-name">حج</div><h3>Hajj</h3></article>
+        </div>
+        <div class="detail-panel reveal" data-pillar-detail></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2">
+          <article class="names-box reveal">
+            <p class="eyebrow" style="color:#2d6a52">Asma ul-Husna</p>
+            <div data-names></div>
+            <div class="hero-actions" style="margin-top:1rem">
+              <button class="btn btn-outline-dark" type="button" data-prev-name>Previous</button>
+              <button class="btn btn-gold" type="button" data-next-name>Next Name</button>
+            </div>
+            <p class="note">A selection from the 99 Names. Recite with adab; this is a teaching aid, not a complete list.</p>
+          </article>
+          <article class="tasbih-box reveal">
+            <p class="eyebrow" style="color:#2d6a52">Digital tasbih</p>
+            <p class="tasbih-count" data-tasbih>0</p>
+            <p style="text-align:center;color:var(--muted)">Tap for SubhanAllah, Alhamdulillah, or Allahu Akbar — 33 each is a common practice after salah.</p>
+            <div class="hero-actions">
+              <button class="btn btn-gold" type="button" data-tasbih-tap>Count +1</button>
+              <button class="btn btn-outline-dark" type="button" data-tasbih-reset>Reset</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Heritage quiz</h2>
+          <div class="gold-rule"></div>
+          <p>Five questions from this museum. Immediate feedback, then your score.</p>
+        </div>
+        <div class="quiz-box reveal" data-quiz></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Noor Heritage</h3>
+        <p>Prayer times load from Aladhan when you are online. Hijri date is calculated in the browser.</p>
+      </div>
+      <div>
+        <h3>Study more</h3>
+        <ul>
+          <li><a href="prophets.html">Prophets</a></li>
+          <li><a href="history.html">History</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>See</h3>
+        <ul>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Noor Heritage.</p>
+  </footer>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIRAT AL-AWWALIN | Islamic Heritage</title>
+  <meta name="description" content="Islamic history, the Qur’an, the Prophets, the Sahaba, sacred places, architecture, and scholars — presented with correct names and without depicting the Prophets.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pattern-bg" data-page="home">
+  <div data-site-header></div>
+  <main id="main">
+    <section class="hero-slider" data-slider aria-label="Heritage photo slider">
+      <article class="slide is-active">
+        <img src="images/kaaba.jpg" alt="The Holy Kaaba in Masjid al-Haram, Makkah">
+        <div class="slide-copy container">
+          <p class="eyebrow">Sacred precincts</p>
+          <h1>Nur al-Turath</h1>
+          <p class="subtitle">Light of Islamic heritage</p>
+          <p class="arabic-line">اللَّهُ نُورُ السَّمَاوَاتِ وَالْأَرْضِ</p>
+          <p>A living museum of Islam: the Qur’an, Prophet Muhammad ﷺ, the Two Holy Mosques, Masjid al-Aqsa, the Companions, scholars, and the architecture of a world civilization.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="places.html">Visit sacred places</a>
+            <a class="btn btn-ghost" href="quran.html">Read the Qur’an</a>
+          </div>
+        </div>
+      </article>
+      <article class="slide">
+        <img src="images/nabawi.jpg" alt="Al-Masjid an-Nabawi, the Prophet’s Mosque in Madinah">
+        <div class="slide-copy container">
+          <p class="eyebrow">Madinah al-Munawwarah</p>
+          <h1>City of the Prophet ﷺ</h1>
+          <p class="subtitle">Where the ummah first took shape after the Hijrah</p>
+          <p>Al-Masjid an-Nabawi, Quba, and the memory of the Sahaba still teach hospitality, brotherhood, and knowledge.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="sahaba.html">Meet the Sahaba</a>
+            <a class="btn btn-ghost" href="history.html">Open the timeline</a>
+          </div>
+        </div>
+      </article>
+      <article class="slide">
+        <img src="images/istanbul.jpg" alt="Sultan Ahmed Mosque, Istanbul">
+        <div class="slide-copy container">
+          <p class="eyebrow">Stone, dome, and calligraphy</p>
+          <h1>Architecture of tawhid</h1>
+          <p class="subtitle">From hypostyle halls to Ottoman domes and Mughal marble</p>
+          <p>Islamic design speaks without portraits of the Prophets: geometry, light, water, and the written Word.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="architecture.html">Study the styles</a>
+            <a class="btn btn-ghost" href="gallery.html">Enter the gallery</a>
+          </div>
+        </div>
+      </article>
+      <article class="slide">
+        <img src="images/sheikh-zayed.jpg" alt="Sheikh Zayed Grand Mosque at dusk">
+        <div class="slide-copy container">
+          <p class="eyebrow">A living tradition</p>
+          <h1>Knowledge is light</h1>
+          <p class="subtitle">Hadith, fiqh, medicine, algebra, and adab</p>
+          <p>From Imam al-Bukhari to al-Khwarizmi, Muslim scholars preserved revelation and expanded the sciences.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="scholars.html">Meet the scholars</a>
+            <a class="btn btn-ghost" href="prophets.html">The Prophets</a>
+          </div>
+        </div>
+      </article>
+      <article class="slide">
+        <img src="images/quran.jpg" alt="A bound mushaf of the Noble Qur’an">
+        <div class="slide-copy container">
+          <p class="eyebrow">Qur’an 24:35</p>
+          <h1>Allah is the Light</h1>
+          <p class="subtitle">of the heavens and the earth</p>
+          <p>Read a surah, learn the Five Pillars, find the qibla, count tasbih, and test what you remember.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="learn.html">Start learning</a>
+            <a class="btn btn-ghost" href="quran.html">Open the mushaf</a>
+          </div>
+        </div>
+      </article>
+      <div class="slider-nav">
+        <button class="slider-btn" type="button" data-prev aria-label="Previous slide">‹</button>
+        <button class="slider-btn" type="button" data-next aria-label="Next slide">›</button>
+      </div>
+      <div class="slider-dots" data-dots></div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2">
+          <article class="ayah-box reveal">
+            <p class="eyebrow" style="color:#2a6b52">Ayah of the day</p>
+            <div data-ayah></div>
+          </article>
+          <article class="prayer-box reveal">
+            <label for="city" class="eyebrow" style="color:#2a6b52">Choose a city</label>
+           <select id="city" class="filter-select" data-city>
+           <option value="Karachi" selected>Karachi</option>
+           <option value="Makkah">Makkah</option>
+          <option value="Madinah">Madinah</option>
+          <option value="Istanbul">Istanbul</option>
+          <option value="Cairo">Cairo</option>
+          <option value="Lahore">Lahore</option>
+          <option value="Fez">Fez</option>
+          <option value="Jerusalem">Jerusalem</option>
+</select>
+            <div data-prayer></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream">
+      <div class="container">
+        <div class="section-header center reveal">
+          <p class="eyebrow" style="color:#2a6b52">Arkan al-Islam</p>
+          <h2>The Five Pillars</h2>
+          <div class="gold-rule"></div>
+          <p class="lede">Islam is built on five foundations taught in Sahih al-Bukhari and Sahih Muslim. Tap a pillar to read a short lesson.</p>
+        </div>
+        <div class="grid grid-5">
+          <article class="card pillar-card reveal" data-pillar="shahada"><div class="arabic-name">شهادة</div><h3>Shahadah</h3><p>Faith</p></article>
+          <article class="card pillar-card reveal" data-pillar="salah"><div class="arabic-name">صلاة</div><h3>Salah</h3><p>Prayer</p></article>
+          <article class="card pillar-card reveal" data-pillar="zakat"><div class="arabic-name">زكاة</div><h3>Zakat</h3><p>Alms</p></article>
+          <article class="card pillar-card reveal" data-pillar="sawm"><div class="arabic-name">صوم</div><h3>Sawm</h3><p>Fasting</p></article>
+          <article class="card pillar-card reveal" data-pillar="hajj"><div class="arabic-name">حج</div><h3>Hajj</h3><p>Pilgrimage</p></article>
+        </div>
+        <div class="detail-panel reveal" data-pillar-detail></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <h2>Islam as a world civilization</h2>
+          <div class="gold-rule"></div>
+          <p class="lede">From 610 CE in the Cave of Hira to the great libraries of Fez and Baghdad, this museum presents a respectful, source-aware journey through Islamic history and civilization — never depicting the Prophets.</p>
+        </div>
+        <div class="stats reveal">
+          <div class="stat"><strong>15+</strong>Centuries of history</div>
+          <div class="stat"><strong>3</strong>Sacred Mosques of special significance</div>
+          <div class="stat"><strong>25</strong>Prophets named in the Qur’an</div>
+          <div class="stat"><strong>5</strong>Pillars of Islam</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Doorways into the collection</h2>
+          <div class="gold-rule"></div>
+        </div>
+        <div class="grid grid-4">
+          <a class="card reveal" href="history.html">
+            <div class="card-media"><img src="images/sunset-mosque.jpg" alt="Grand mosque at dusk"></div>
+            <div class="card-body"><span class="tag">History</span><h3>Revelation to empires</h3><p>Hijrah, Rashidun, Umayyads, Abbasids, Ottomans, and the modern ummah.</p></div>
+          </a>
+          <a class="card reveal" href="prophets.html">
+            <div class="card-media"><img src="images/quran.jpg" alt="Bound mushaf of the Qur’an"></div>
+            <div class="card-body"><span class="tag">People</span><h3>Prophets &amp; Sahaba</h3><p>Qur’anic stories and Companions, shown with calligraphy — never portraits.</p></div>
+          </a>
+          <a class="card reveal" href="places.html">
+            <div class="card-media"><img src="images/kaaba.jpg" alt="The Kaaba surrounded by pilgrims"></div>
+            <div class="card-body"><span class="tag">Places</span><h3>Sacred landscapes</h3><p>Makkah, Madinah, al-Aqsa.</p></div>
+          </a>
+          <a class="card reveal" href="architecture.html">
+            <div class="card-media"><img src="images/sheikh-zayed.jpg" alt="White marble mosque colonnades"></div>
+            <div class="card-body"><span class="tag">Design</span><h3>Domes &amp; geometry</h3><p>Minarets, arches, zellij, and the grammar of mosque space.</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>The three mosques of special journey</h2>
+          <div class="gold-rule"></div>
+          <p>A well-known hadith in Sahih al-Bukhari and Sahih Muslim limits special travel for mosque-visiting to these three precincts.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="card-media"><img src="images/kaaba.jpg" alt="Masjid al-Haram and the Kaaba"></div>
+            <div class="card-body"><h3>Masjid al-Haram</h3><p>Makkah. The Kaaba is the qiblah. Hajj and ʿUmrah fulfill Qur’an 22:27 and the fifth pillar.</p></div>
+          </article>
+          <article class="card reveal">
+            <div class="card-media"><img src="images/nabawi.jpg" alt="The Prophet’s Mosque in Madinah"></div>
+            <div class="card-body"><h3>Al-Masjid an-Nabawi</h3><p>Madinah. The mosque of Prophet Muhammad ﷺ, the Rawdah, and the first Muslim civic community.</p></div>
+          </article>
+          <article class="card ornament-card reveal">
+            <div class="card-media"><img src="images/masjid_al_aqsa.jpg" alt="Masjid Al AQSA"></div>
+            <div class="card-body"><h3>Masjid al-Aqsa</h3><p>Jerusalem’s noble sanctuary (al-Haram al-Sharif). Linked in tafsir to the Night Journey (Qur’an 17:1). The Dome of the Rock (completed 691–92 CE) stands within the same precinct.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream">
+      <div class="container">
+        <div class="feature-row reveal">
+          <div class="feature-copy">
+            <p class="eyebrow" style="color:#2a6b52">Form &amp; meaning</p>
+            <h3>Why Islamic architecture looks this way</h3>
+            <p>Because worship is toward one God, mosque interiors avoid statues. Beauty is carried by the Word, repeating geometry that hints at infinity, courtyards of water and shade, and a minaret that calls the city to salah.</p>
+            <a class="btn btn-outline-dark" href="architecture.html">Explore styles</a>
+          </div>
+          <div class="feature-image">
+            <img src="images/istanbul.jpg" alt="Ottoman mosque with cascading domes">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-header center reveal">
+          <h2>Signposts of Islamic history</h2>
+          <div class="gold-rule"></div>
+        </div>
+        <div class="timeline reveal">
+          <article class="timeline-item"><p class="year">610 CE</p><h3>First revelation</h3><p>Iqraʾ in the Cave of Hira (Qur’an 96:1–5). Twenty-three years of wahy follow.</p></article>
+          <article class="timeline-item"><p class="year">622 CE / 1 AH</p><h3>Hijrah</h3><p>The Islamic calendar begins. Madinah becomes the home of the ummah.</p></article>
+          <article class="timeline-item"><p class="year">632–661</p><h3>Rightly Guided Caliphs</h3><p>Abu Bakr, ʿUmar, ʿUthman, and ʿAli (may Allah be pleased with them). The ʿUthmanic mushaf is standardized.</p></article>
+          <article class="timeline-item"><p class="year">8th–14th c.</p><h3>Age of ʿilm</h3><p>Hadith canons, four madhhabs, House of Wisdom, Andalus, and the great mosques.</p></article>
+        </div>
+        <p style="text-align:center;margin-top:1rem" class="reveal"><a class="btn btn-gold" href="history.html">Open the full chronicle</a></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta reveal">
+          <p class="eyebrow">Continue</p>
+          <h2>Walk through light, stone, and memory</h2>
+          <p>Find the qibla, read a surah, and count tasbih — then walk the gallery of mosque and city photographs.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="gallery.html">Gallery</a>
+            <a class="btn btn-ghost" href="learn.html">Quiz, qibla &amp; tasbih</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+  <script src="script.js"></script>
+</body>
+</html>

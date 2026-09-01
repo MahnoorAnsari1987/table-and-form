@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Noor Heritage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pattern-bg" data-page="gallery">
+  <header class="site-header">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="container">
+      <div class="topbar"><span data-hijri-date></span><span>Original photographs</span></div>
+      <nav class="navbar" aria-label="Main">
+        <a class="logo" href="index.html"><span class="logo-mark">ن</span><span class="logo-text">Noor Heritage<span>Islamic History &amp; Culture</span></span></a>
+        <ul class="nav-links">
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="history.html" data-nav="history">History</a></li>
+          <li><a href="prophets.html" data-nav="prophets">Prophets</a></li>
+          <li><a href="sahaba.html" data-nav="sahaba">Sahaba</a></li>
+          <li><a href="places.html" data-nav="places">Places</a></li>
+          <li><a href="architecture.html" data-nav="architecture">Architecture</a></li>
+          <li><a href="scholars.html" data-nav="scholars">Scholars</a></li>
+          <li><a href="learn.html" data-nav="learn">Learn</a></li>
+          <li><a href="gallery.html" data-nav="gallery">Gallery</a></li>
+        </ul>
+        <button class="icon-btn" type="button" data-open-search aria-label="Search">⌕</button>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero page-hero">
+      <div class="hero-media"><img src="images/lanterns.jpg" alt="Mosque lamps and arches"></div>
+      <div class="hero-inner container">
+        <p class="eyebrow">Collections</p>
+        <h1>Gallery</h1>
+        <p class="subtitle">Click any photograph — lightbox, arrows, and filters all work</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Look closely</h2>
+          <div class="gold-rule"></div>
+          <p class="lede">These are real photographs saved inside this project. No AI image service. Search captions or filter by type.</p>
+        </div>
+        <div class="toolbar reveal">
+          <input class="search-input" type="search" data-search placeholder="Search captions..." aria-label="Search gallery">
+          <div class="filter-chips">
+            <button class="chip active" type="button" data-filter="all">All</button>
+            <button class="chip" type="button" data-filter="mosques">Mosques</button>
+            <button class="chip" type="button" data-filter="architecture">Architecture</button>
+            <button class="chip" type="button" data-filter="geometry">Geometry</button>
+            <button class="chip" type="button" data-filter="manuscripts">Manuscripts</button>
+            <button class="chip" type="button" data-filter="places">Places</button>
+          </div>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item tall reveal" tabindex="0" data-item="haram kaaba makkah mosque" data-category="mosques">
+            <img src="images/kaaba.jpg" alt="The Kaaba in Masjid al-Haram"><figcaption>Masjid al-Haram, Makkah</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" tabindex="0" data-item="madinah nabawi green dome mosque" data-category="mosques">
+            <img src="images/nabawi.jpg" alt="The Prophet's Mosque"><figcaption>Al-Masjid an-Nabawi, Madinah</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" tabindex="0" data-item="istanbul blue mosque ottoman" data-category="mosques">
+            <img src="images/istanbul.jpg" alt="Istanbul mosque skyline"><figcaption>Imperial mosques, Istanbul</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" tabindex="0" data-item="sheikh zayed abu dhabi colonnade" data-category="architecture">
+            <img src="images/sheikh-zayed.jpg" alt="Sheikh Zayed Grand Mosque"><figcaption>Sheikh Zayed Grand Mosque</figcaption>
+          </figure>
+          <figure class="gallery-item tall reveal" tabindex="0" data-item="prayer hall lamps arches mosque interior" data-category="architecture">
+            <img src="images/lanterns.jpg" alt="Prayer hall lamps"><figcaption>Light in the prayer hall</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" tabindex="0" data-item="dome islamic architecture" data-category="architecture">
+            <img src="images/marble.jpg" alt="Marble mosque courtyard"><figcaption>Courtyard and dome language</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" tabindex="0" data-item="taj mahal agra mughal" data-category="places">
+            <img src="images/taj-mahal.jpg" alt="Taj Mahal"><figcaption>Taj Mahal, Agra</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" tabindex="0" data-item="geometric tile pattern zellij" data-category="geometry">
+            <img src="images/geometry.jpg" alt="Islamic geometric ornament"><figcaption>Geometric ornament</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" tabindex="0" data-item="horseshoe arches andalus cordoba" data-category="architecture">
+            <img src="images/arches.jpg" alt="Historic Islamic arches"><figcaption>Repeating arches</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" tabindex="0" data-item="manuscript library books knowledge" data-category="manuscripts">
+            <img src="images/library.jpg" alt="Historic library shelves"><figcaption>Libraries of ‘ilm</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" tabindex="0" data-item="calligraphy quranic script" data-category="manuscripts">
+            <img src="images/calligraphy.jpg" alt="Qur’an calligraphy"><figcaption>The written Word</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" tabindex="0" data-item="morocco courtyard zellij maghrib" data-category="geometry">
+            <img src="images/fes.jpg" alt="Maghribi courtyard and craft"><figcaption>Maghrib courtyards</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" tabindex="0" data-item="jerusalem dome rock aqsa" data-category="places">
+            <img src="images/courtyard.jpg" alt="Historic sanctuary courtyard"><figcaption>Noble sanctuary memory</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" tabindex="0" data-item="mosque silhouette dusk minaret" data-category="mosques">
+            <img src="images/sunset-mosque.jpg" alt="Mosque at dusk"><figcaption>Minarets at Maghrib</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" tabindex="0" data-item="hassan ii casablanca ocean mosque" data-category="mosques">
+            <img src="images/hassan-ii.jpg" alt="Oceanfront mosque architecture"><figcaption>Hassan II tradition, Casablanca</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" tabindex="0" data-item="alhambra granada nasrid" data-category="architecture">
+            <img src="images/alhambra.jpg" alt="Alhambra palace architecture"><figcaption>Alhambra, Granada</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" tabindex="0" data-item="mosque interior ottoman" data-category="architecture">
+            <img src="images/mosque-interior.jpg" alt="Mosque interior"><figcaption>Interior of a historic mosque</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" tabindex="0" data-item="minaret call to prayer" data-category="mosques">
+            <img src="images/minaret.jpg" alt="Tall minaret"><figcaption>The vertical signature of salah</figcaption>
+          </figure>
+        </div>
+        <p class="empty-state hidden" data-empty>No images match this filter.</p>
+      </div>
+    </section>
+  </main>
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" type="button" aria-label="Close">×</button>
+    <button class="lightbox-nav prev" type="button" aria-label="Previous">‹</button>
+    <div><img src="" alt=""><p></p></div>
+    <button class="lightbox-nav next" type="button" aria-label="Next">›</button>
+  </div>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h3>Noor Heritage</h3><p>Use arrow keys in the lightbox. Click outside the image to close.</p></div>
+      <div><h3>Explore</h3><ul><li><a href="architecture.html">Architecture</a></li><li><a href="places.html">Places</a></li></ul></div>
+      <div><h3>More</h3><ul><li><a href="learn.html">Learn</a></li><li><a href="index.html">Home</a></li></ul></div>
+    </div>
+    <p class="copyright">© 2026 Noor Heritage.</p>
+  </footer>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

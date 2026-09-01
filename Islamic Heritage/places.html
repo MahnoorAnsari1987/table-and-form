@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Islamic Places | Noor Heritage</title>
+  <meta name="description" content="Makkah, Madinah, Masjid al-Aqsa, and other historically significant Islamic locations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pattern-bg" data-page="places">
+    <header class="site-header">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="container">
+      <div class="topbar"><span data-hijri-date></span><span>Noor Heritage</span></div>
+      <nav class="navbar" aria-label="Main">
+        <a class="logo" href="index.html"><span class="logo-mark">ن</span><span class="logo-text">Noor Heritage<span>Islamic History &amp; Culture</span></span></a>
+        <ul class="nav-links">
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="history.html" data-nav="history">History</a></li>
+          <li><a href="prophets.html" data-nav="prophets">Prophets</a></li>
+          <li><a href="sahaba.html" data-nav="sahaba">Sahaba</a></li>
+          <li><a href="places.html" data-nav="places">Places</a></li>
+          <li><a href="architecture.html" data-nav="architecture">Architecture</a></li>
+          <li><a href="scholars.html" data-nav="scholars">Scholars</a></li>
+          <li><a href="learn.html" data-nav="learn">Learn</a></li>
+          <li><a href="gallery.html" data-nav="gallery">Gallery</a></li>
+        </ul>
+        <button class="icon-btn" type="button" data-open-search aria-label="Search">⌕</button>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero page-hero">
+      <div class="hero-media">
+        <img src="images/kaaba.jpg" alt="The Kaaba surrounded by pilgrims in Masjid al-Haram">
+      </div>
+      <div class="hero-inner container">
+        <p class="eyebrow">Sacred &amp; historic landscapes</p>
+        <h1>Islamic Places</h1>
+        <p class="subtitle">From the Two Holy Mosques to cities of learning and stone</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>A geography of meaning</h2>
+          <div class="gold-rule"></div>
+          <p class="lede">Some sites are sacred in worship. Others are historically important as centers of learning, power, or architectural genius. A well-known hadith in Sahih al-Bukhari and Sahih Muslim states that journey should not be undertaken to visit mosques except three: Masjid al-Haram, the Prophet's Mosque, and Masjid al-Aqsa. Other locations below are presented for historical and cultural education.</p>
+        </div>
+        <div class="toolbar reveal">
+          <input class="search-input" type="search" data-search placeholder="Search places..." aria-label="Search places">
+          <div class="filter-chips">
+            <button class="chip active" type="button" data-filter="all">All</button>
+            <button class="chip" type="button" data-filter="sacred">Sacred precincts</button>
+            <button class="chip" type="button" data-filter="historic">Historic cities</button>
+          </div>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal" data-item="makkah kaaba haram hajj" data-category="sacred">
+            <div class="card-media"><img src="images/kaaba.jpg" alt="The Kaaba in Makkah"></div>
+            <div class="card-body">
+              <span class="tag">Makkah, Arabian Peninsula</span>
+              <h3>Makkah &amp; Masjid al-Haram</h3>
+              <p>The holiest city in Islam. The Kaaba is the qiblah. Hajj, one of the Five Pillars, centers on rites in and around Makkah described in the Qur'an (for example, 2:196-200 and 22:27-29).</p>
+              <ul class="meta-list">
+                <li>Historical importance: prophetic birthplace and site of the Kaaba</li>
+                <li>Living practice: Hajj and Umrah</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card reveal" data-item="madinah nabawi hijrah" data-category="sacred">
+            <div class="card-media"><img src="images/nabawi.jpg" alt="Green dome of the Prophet's Mosque"></div>
+            <div class="card-body">
+              <span class="tag">Madinah</span>
+              <h3>Madinah &amp; Al-Masjid an-Nabawi</h3>
+              <p>The city that received the Prophet ﷺ after the Hijrah. The mosque he established became the center of the first Muslim community. Visiting Madinah is an act of love and greeting, distinct from Hajj itself.</p>
+              <ul class="meta-list">
+                <li>Historical importance: capital of the early ummah</li>
+                <li>Includes Quba and other early mosques in the city's memory</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card reveal" data-item="aqsa jerusalem quds dome rock" data-category="sacred">
+            <div class="card-media"><img src="images/masjid_al_aqsa.jpg" alt="Dome of the Rock precinct in Jerusalem"></div>
+            <div class="card-body">
+              <span class="tag">Jerusalem</span>
+              <h3>Masjid al-Aqsa</h3>
+              <p>The noble sanctuary (al-Haram al-Sharif) includes Al-Aqsa Mosque and the Dome of the Rock. The Qur'an refers to the "farthest mosque" in the Night Journey (Qur'an 17:1), a verse classically linked to this precinct.</p>
+              <ul class="meta-list">
+                <li>Third of the three mosques of special merit in hadith</li>
+                <li>A layered history of Umayyad architecture</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card reveal" data-item="cairo ibn tulun al-azhar egypt" data-category="historic">
+            <div class="card-media"><img src="images/sunset-mosque.jpg" alt="Historic mosque architecture in Egypt"></div>
+            <div class="card-body">
+              <span class="tag">Egypt</span>
+              <h3>Historic Cairo</h3>
+              <p>A UNESCO-recognized urban landscape of Fatimid, Ayyubid, and Mamluk mosques, madrasas, and markets. Al-Azhar, founded in the 10th century, remains a major institution of Sunni learning.</p>
+              <ul class="meta-list">
+                <li>Ibn Tulun Mosque is among the oldest surviving congregational mosques</li>
+                <li>A living city of scholarship and craft</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card reveal" data-item="cordoba andalusia spain mosque cathedral" data-category="historic">
+            <div class="card-media"><img src="images/arches.jpg" alt="Horseshoe arches in a historic Andalusian hall"></div>
+            <div class="card-body">
+              <span class="tag">Al-Andalus</span>
+              <h3>The Mosque-Cathedral of Cordoba</h3>
+              <p>Begun in the 8th century under Abd al-Rahman I, the hypostyle hall of repeating horseshoe arches is one of the most recognizable interiors in Islamic architectural history.</p>
+              <ul class="meta-list">
+                <li>Symbol of Umayyad Spain</li>
+                <li>Later Christian additions show layered heritage</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card reveal" data-item="istanbul hagia sophia blue mosque ottoman" data-category="historic">
+            <div class="card-media"><img src="images/istanbul.jpg" alt="Blue Mosque in Istanbul"></div>
+            <div class="card-body">
+              <span class="tag">Anatolia</span>
+              <h3>Istanbul's imperial mosques</h3>
+              <p>Ottoman architects, especially Mimar Sinan, shaped a skyline of cascading domes. The Sultan Ahmed Mosque (Blue Mosque) faces Hagia Sophia across a historic square.</p>
+              <ul class="meta-list">
+                <li>A bridge between Byzantine and Islamic forms</li>
+                <li>Still a city of active congregational worship</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card reveal" data-item="samarkand registan uzbekistan silk road" data-category="historic">
+            <div class="card-media"><img src="images/geometry.jpg" alt="Tile-covered madrasa facade in Central Asia"></div>
+            <div class="card-body">
+              <span class="tag">Central Asia</span>
+              <h3>Samarkand &amp; the Registan</h3>
+              <p>A Timurid ensemble of madrasas famous for turquoise tile, iwans, and geometric ornament - a Silk Road crossroads of Persianate Islamic culture.</p>
+              <ul class="meta-list">
+                <li>Centers of astronomy and manuscript culture nearby</li>
+                <li>Outstanding example of iwan-madrasa planning</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card reveal" data-item="fez morocco qarawiyyin maghrib" data-category="historic">
+            <div class="card-media"><img src="images/fes.jpg" alt="Moroccan courtyard with zellij tilework"></div>
+            <div class="card-body">
+              <span class="tag">Maghrib</span>
+              <h3>Fez and al-Qarawiyyin</h3>
+              <p>Al-Qarawiyyin, founded in the 9th century by Fatima al-Fihri according to historical tradition, is often cited among the world's oldest continually operating institutions of learning.</p>
+              <ul class="meta-list">
+                <li>A heart of Maghribi scholarship</li>
+                <li>Zellij, wood carving, and courtyard mosques</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card reveal" data-item="kairouan tunisia great mosque north africa" data-category="historic">
+            <div class="card-media"><img src="images/minaret.jpg" alt="Minaret of a North African great mosque"></div>
+            <div class="card-body">
+              <span class="tag">Ifriqiya</span>
+              <h3>The Great Mosque of Kairouan</h3>
+              <p>Founded in the 7th century and rebuilt in later Aghlabid phases, it is a landmark of early Maghribi mosque design and a historic pilgrimage city of North Africa.</p>
+              <ul class="meta-list">
+                <li>Influential hypostyle plan and massive minaret</li>
+                <li>A foundation city of Islamic North Africa</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <p class="empty-state hidden" data-empty>No matching places. Try another keyword.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Noor Heritage</h3>
+        <p>Photographs show architecture and landscapes, not the Prophets.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="architecture.html">Architecture</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul>
+          <li><a href="history.html">History</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">Â© 2026 Noor Heritage.</p>
+  </footer>
+  <button class="back-to-top" aria-label="Back to top">â†‘</button>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
